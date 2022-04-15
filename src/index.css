@@ -1,0 +1,77 @@
+body{
+  background-image: linear-gradient(to right, var(--color-1), var(--color-2),
+  var(--color-3),var(--color-4),var(--color-5));
+  
+  margin: 0;
+  padding: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+:root{
+  --color-1: rgb(135, 240, 240);
+  --color-2: rgb(240, 201, 169);
+  --color-3: rgb(227, 228, 163);
+  --color-5: rgb(174, 248, 248);
+  --color-4: rgb(236, 190, 241);
+
+}
+.container{
+  width: 500px;
+  height: 200px;
+  margin-left: 400px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;  
+  background-color: rgb(177, 238, 238);
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: 10;
+}
+/* .second{
+  width: 400px;
+  height: 200px;
+  margin-left: 400px;
+  padding: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-radius: 15px;  
+
+} */
+
+@keyframes example {
+  from {background-color: rgb(175, 249, 230);}
+  to {background-color: rgb(73, 54, 248);}
+}
+h1{
+  font-weight: bolder;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+h2{
+  font-weight: bolder;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1:hover{
+  background-color: rgb(230, 232, 159);
+}
+h2:hover{
+  background-color: rgb(230, 232, 159);
+  border: 2px solid rgb(128, 234, 242);
+  border-radius: 20px;
+  box-shadow: 10px;
+}
